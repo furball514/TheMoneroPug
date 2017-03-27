@@ -17,3 +17,12 @@ a {
 h6{
   float: right;
 }
+
+section{
+  font-size: 0.5em;
+}
+
+section a{
+  color: white;
+  text-shadow: none;
+}

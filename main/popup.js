@@ -55,7 +55,9 @@ $(document).ready(function() {
     });
   });
  //------------------------------------------------------
-  var id = 753252;
+  var defId = 753252;
+  var id;
+  id = localStorage.id;
 
   function btcTalk() {
     $.ajax({
@@ -66,7 +68,7 @@ $(document).ready(function() {
       },
       error: function(data) {
         console.log('error');
-        $('section').text('BitcoinTalk API failed,showing r/xmrtrader instead.');
+        alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
         setTimeout(rxmrtrader, 1000);
       }
     });
@@ -93,7 +95,9 @@ $(document).ready(function() {
     });
   }
 
+  var defSetting = 'btc';
   var setting;
+  setting = localStorage.mySetting;
   switch (setting) {
     case 'btc':
       btcTalk();

@@ -6,19 +6,24 @@
   <link rel="stylesheet" href="options.css" type="text/css">
   </head>
   <body>
+ <a href="/main/popup.html">X</a>
   <h4>Subscribe to:</h4>
 <form>
-  <input type="radio" name="feed" value="btc" checked> bitcointalk.org 
+  <input id="btc" type="radio" name="feed" value="btc" checked> bitcointalk.org 
   <br>
-  <input type="radio" name="feed" value="rxmr">&nbsp;r/Monero<br>
-  <input type="radio" name="feed" value="rxmrtrader"> r/xmrtrader<br>
-  <input type="radio" name="feed" value="stack"> monero.stackexchange
+  <input id="rxmr" type="radio" name="feed" value="rxmr">&nbsp;r/Monero<br>
+  <input id="rxmrtrader" type="radio" name="feed" value="rxmrtrader"> r/xmrtrader<br>
+  <input id="stack" type="radio" name="feed" value="stack"> monero.stackexchange
 </form>
 
 <form>
   (btctalk)Topic id:
-     <input type="text" name="topic" placeholder="753252"> (Note: Default is Monero Speculation.)
-</form><br>  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+     <input id="topic" type="text" name="topic" placeholder="753252" value=""> (Note: Default is Monero Speculation.) 
+</form><br> 
+<br>
+<br>
+  <div id="sub"><button>Submit</button></div>
+ <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
     <script src="options.js"></script>  
   </body>
 </html>

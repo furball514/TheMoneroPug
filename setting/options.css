@@ -1,1 +1,9 @@
-.
+body {
+  margin-left: 10px;
+  overflow: auto;
+}
+
+form{
+  width: 50%;
+  float: left;
+}

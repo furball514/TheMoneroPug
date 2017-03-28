@@ -55,16 +55,22 @@ $(document).ready(function() {
     });
   });
  //------------------------------------------------------
-  var defId = 753252;
+ //var defId = 753252;
   var id;
-  id = localStorage.id;
+  
 
   function btcTalk() {
+    id = localStorage.id;
+    if (id == undefined || id === ''){
+    id = 753252;
+    console.log(id);
+  }
     $.ajax({
-      url: 'http://bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=latest',
+      url: 'http://www.bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=latest',
       dataType: 'json',
       success: function(data) {
         console.log(data);
+        $('section').append(JSON.stringify(data));
       },
       error: function(data) {
         console.log('error');
@@ -95,9 +101,15 @@ $(document).ready(function() {
     });
   }
 
-  var defSetting = 'btc';
+  //var defSetting = 'btc';
   var setting;
+  function check(){
   setting = localStorage.mySetting;
+  if (setting == undefined || (setting != 'btc' && setting != 'rxmr' && setting != 'rxmrtrader' && setting != 'stack')){
+  	setting = 'btc';
+  }
+}
+  check();
   switch (setting) {
     case 'btc':
       btcTalk();

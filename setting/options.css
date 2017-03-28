@@ -7,3 +7,19 @@ form{
   width: 50%;
   float: left;
 }
+
+#sub{
+  position: absolute;
+  left: 40%;
+  margin-right: -50%;
+  transform: translate(-50%, -0%);
+  width: auto;
+  margin-top: 70px;
+}
+  
+a{
+  text-decoration: none;
+  float: right;
+  font-size: 0.7em; 
+  margin-right: 50px;
+}

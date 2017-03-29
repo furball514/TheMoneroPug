@@ -41,3 +41,9 @@ section a{
 .danger{
   color: #d9534f;
 }
+
+img{
+  width: 100px;
+  height: 60px;
+  margin-top: 2px;
+}

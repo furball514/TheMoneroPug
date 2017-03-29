@@ -124,7 +124,7 @@ $(document).ready(function() {
       stacknews();
       break;
   }
-  $('#setting').click(function() {
+  $('#settings').click(function() {
   if (chrome.runtime.openOptionsPage) {
     // New way to open options pages, if supported (Chrome 42+).
     chrome.runtime.openOptionsPage();

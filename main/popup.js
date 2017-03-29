@@ -72,7 +72,7 @@ $(document).ready(function() {
     console.log(id);
   }
     $.ajax({
-      url: 'http://www.bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=latest',
+      url: 'http://bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=latest',
       dataType: 'json',
       success: function(data) {
         console.log(data);

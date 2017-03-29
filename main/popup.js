@@ -21,10 +21,16 @@ $(document).ready(function() {
     $('#change').html(change);
     if (change.charAt(0) === '-') {
       $('p').html('BOOHOO!');
+      $('p, #change').removeClass('success')
+      $('p, #change').addClass('danger');   
     } else if (change.charAt(0) === '+') {
       $('p').html('We\'re going to the moon!');
+      $('p, #change').removeClass('danger')
+      $('p, #change').addClass('success');   
     } else {
       $('p').html('');
+      $('p, #change').removeClass('success')
+      $('p, #change').removeClass('danger');   
     }
     $('h6').text(data.timestamp);
     //console.log(data.timestamp);

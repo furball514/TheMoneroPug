@@ -32,7 +32,13 @@ section a{
   font-size: 0.3em;
   border: 1px solid black;
   background-image: url("gear.png");
-}
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 10%;}
 
 .success{
   color: #5cb85c;

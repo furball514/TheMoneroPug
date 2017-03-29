@@ -33,3 +33,11 @@ section a{
   border: 1px solid black;
   background-image: url("gear.png");
 }
+
+.success{
+  color: #5cb85c;
+}
+
+.danger{
+  color: #d9534f;
+}

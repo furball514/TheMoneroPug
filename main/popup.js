@@ -80,7 +80,7 @@ $(document).ready(function() {
       },
       error: function(data) {
         console.log('error');
-        alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
+        //alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
         setTimeout(rxmrtrader, 1000);
       }
     });

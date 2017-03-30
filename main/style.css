@@ -29,23 +29,21 @@ section a{
 }
 
 #settings{
-  font-size: 0.3em;
-  border: 1px solid black;
-  background-image: url("gear.png");
+  background: url("gear.png") no-repeat top center;
+  background-size: 15px 15px;
   display: inline-block;
-  text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  border-radius: 10%;}
+  border-radius: 50%;}
 
 .success{
   color: #5cb85c;
 }
 
 .danger{
-  color: #d9534f;
+  color: #f44336;
 }
 
 img{

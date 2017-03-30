@@ -31,3 +31,14 @@ This extension can be found [here](https://monerocoin.github.io).
 * Optimized script loading
 * Colour coded
 
+[![1.png](https://s15.postimg.org/mnchsaa3f/image.png)](https://postimg.org/image/ycghg911z/)
+
+[![2.png](https://s17.postimg.org/aqdilq1zz/image.png)](https://postimg.org/image/5277utxnf/)
+
+[![3.png](https://s18.postimg.org/44kedlk2h/image.png)](https://postimg.org/image/fgwzvdsr9/)
+
+[![4.png](https://s30.postimg.org/s0zyo3eox/image.png)](https://postimg.org/image/mctnx7acd/)
+
+[![5.png](https://s29.postimg.org/6yrwof3tz/image.png)](https://postimg.org/image/6yrwof3tv/)
+
+[![6.png](https://s3.postimg.org/767xqbfc3/image.png)](https://postimg.org/image/x1ro9ih5r/)

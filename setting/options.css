@@ -33,3 +33,7 @@ a{
   font-size: 0.7em; 
   margin-right: 50px;
 }
+
+h6{
+  background: rgba(178,235,242,0.5);
+}

@@ -21,7 +21,7 @@
   },
   "background": {
     "scripts": [
-      "jquery-3.2.0.min.js",
+      "main/jquery-3.2.0.min.js",
       "main/popup.js",
       "more/more.js",
       "setting/options.js"

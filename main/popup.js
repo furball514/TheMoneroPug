@@ -39,7 +39,7 @@ $(document).ready(function() {
     });*/
   });
 
-  $('button').click(function() {
+  $('#button').click(function() {
     if (currency === 'usd') {
       currency = 'btc';
     } else if (currency === 'btc') {

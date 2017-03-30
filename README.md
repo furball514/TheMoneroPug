@@ -4,7 +4,7 @@ Chrome extension for viewing Monero market details. Made for traders.
 This extension can be found [here](https://monerocoin.github.io). 
 ---------
 
-[Developer website](https://karthiknallasivan.github.io).
+[Developer website](https://karthiknallasivan.github.io).Mail [me](http://scr.im/3nji).
 ---------
 
 **Features**

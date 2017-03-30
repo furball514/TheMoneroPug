@@ -5,7 +5,7 @@
   "author": "Karthik",
   "version": "1.0.0",
   "version_name": "1.0.0",
-  "description": "A Chrome extension for viewing Monero price(for traders)",
+  "description": "A Chrome extension for viewing Monero market details. Made for traders.",
   "icons": {"128":"main/128.png"},
   "browser_action": {
     "default_icon": {

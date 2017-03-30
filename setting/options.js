@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('h6').hide();
   var setting = '';
   var value;
   $('#topic').change(function(){
@@ -23,5 +24,7 @@ $(document).ready(function(){
     console.log(value);
     localStorage.mySetting = setting;
     localStorage.id = value;
+    $('h6').show();
+    setTimeout(function(){$('h6').hide();},2000);  
   });
 });

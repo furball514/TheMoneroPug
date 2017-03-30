@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   var currency = 'usd';
-
+  $('h5').hide();
   $('.round').click(function() {
     $('.full').toggle();
   });
@@ -76,10 +76,13 @@ $(document).ready(function() {
       dataType: 'json',
       success: function(data) {
         console.log(data);
+        $('h5').hide();
         $('section').append(JSON.stringify(data));
       },
       error: function(data) {
         console.log('error');
+        $('h5').show();
+        setTimeout(function(){$('h5').hide();},1000);
         //alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
         setTimeout(rxmrtrader, 1000);
       }

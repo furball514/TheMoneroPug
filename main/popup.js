@@ -82,7 +82,7 @@ $(document).ready(function() {
       error: function(data) {
         console.log('error');
         $('h5').show();
-        setTimeout(function(){$('h5').hide();},1000);
+        setTimeout(function(){$('h5').hide();},2000);
         //alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
         setTimeout(rxmrtrader, 1000);
       }

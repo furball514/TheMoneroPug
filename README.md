@@ -1,4 +1,4 @@
-# TheMoneroPug
+# TheMoneroPug ![icon](/main/48.png)
 Chrome extension for viewing Monero market details. Made for traders.
 
 This extension can be found [here](https://monerocoin.github.io). 

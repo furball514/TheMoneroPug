@@ -64,7 +64,58 @@ $(document).ready(function() {
  //var defId = 753252;
   var id;
   
-
+  function fallback(){ id = localStorage.id;
+    if (id == undefined || id === ''){
+    id = 753252;
+    console.log(id);}
+     var random = Math.floor(Math.random() * 1400 + 1); 
+     //only for xmr spec
+     $.ajax({
+      url: 'http://bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=' + random ,
+      dataType: 'json',
+      success: function(data) {
+        var pageN = data.pageNumbers;
+        var pageNtoo = data.pages.length + 1;
+        $.ajax({
+      url: 'http://bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=' + pageN ,
+      dataType: 'json',
+      success: function(data) {
+        var pc = data.postCount;
+        for (var q = 0;q<data.posts.length;q++){
+        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.posts[q].content + '</a>' + ' -' + data.posts[q].poster);
+        }
+      },
+      error: function(data) {
+        console.log('error');
+        $.ajax({
+      url: 'http://bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=' + pageNtoo,
+      dataType: 'json',
+      success: function(data) {
+        var pc = data.postCount;
+        for (var j = 0;j<data.posts.length;j++){
+        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.posts[j].content + '</a>' + ' -' + data.posts[j].poster);
+        }
+      },
+      error: function(data) {
+        console.log('error');
+        $('h5').show();
+        setTimeout(function(){$('h5').hide();},2000);
+        //alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
+        setTimeout(rxmrtrader, 1000)      
+      }
+    });        
+      }
+    });  
+      },
+      error: function(data) {
+        console.log('error');
+        $('h5').show();
+        setTimeout(function(){$('h5').hide();},2000);
+        //alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
+        setTimeout(rxmrtrader, 1000);
+      }
+    });     }
+  
   function btcTalk() {
     id = localStorage.id;
     if (id == undefined || id === ''){
@@ -84,10 +135,7 @@ $(document).ready(function() {
       },
       error: function(data) {
         console.log('error');
-        $('h5').show();
-        setTimeout(function(){$('h5').hide();},2000);
-        //alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
-        setTimeout(rxmrtrader, 1000);
+        fallback();
       }
     });
   }
@@ -145,3 +193,8 @@ $(document).ready(function() {
     window.open(chrome.runtime.getURL('/setting/options.html'));
   }
 });});
+
+/*$('h5').show();
+        setTimeout(function(){$('h5').hide();},2000);
+        //alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
+        setTimeout(rxmrtrader, 1000);*/

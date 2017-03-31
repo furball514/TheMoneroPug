@@ -77,7 +77,10 @@ $(document).ready(function() {
       success: function(data) {
         console.log(data);
         $('h5').hide();
-        $('section').append(data.posts.content + ' -' + data.posts.poster);
+        var pc = data.postCount;
+        for (var p = 0;p<data.posts.length;p++){
+        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.posts[p].content + '</a>' + ' -' + data.posts[p].poster);
+        }
       },
       error: function(data) {
         console.log('error');

@@ -77,7 +77,7 @@ $(document).ready(function() {
       success: function(data) {
         console.log(data);
         $('h5').hide();
-        $('section').append(JSON.stringify(data));
+        $('section').append(data.posts.content + ' -' + data.posts.poster);
       },
       error: function(data) {
         console.log('error');

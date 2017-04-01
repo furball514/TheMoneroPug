@@ -67,22 +67,22 @@ $(document).ready(function() {
   function fallback(){ id = localStorage.id;
     if (id == undefined || id === ''){
     id = 753252;
-    console.log(id);}
+    console.log(id);}    /* fallback may fail. yet to test.*/
      var random = Math.floor(Math.random() * 1400 + 1); 
      //only for xmr spec
      $.ajax({
       url: 'http://bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=' + random ,
       dataType: 'json',
       success: function(data) {
-        var pageN = data.pageNumbers;
+        var pageN = data.pageNumbers; /* numberPages ?*/
         var pageNtoo = data.pages.length + 1;
         $.ajax({
       url: 'http://bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=' + pageN ,
       dataType: 'json',
       success: function(data) {
         var pc = data.postCount;
-        for (var q = 0;q<data.posts.length;q++){
-        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.posts[q].content + '</a>' + ' -' + data.posts[q].poster);
+        for (var q = 0;q<data.requestedPage.posts.length;q++){
+        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.requestedPage.posts[q].content + '</a>' + ' -' + data.requestedPage.posts[q].poster);
         }
       },
       error: function(data) {
@@ -92,8 +92,8 @@ $(document).ready(function() {
       dataType: 'json',
       success: function(data) {
         var pc = data.postCount;
-        for (var j = 0;j<data.posts.length;j++){
-        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.posts[j].content + '</a>' + ' -' + data.posts[j].poster);
+        for (var j = 0;j<data.requestedPage.posts.length;j++){
+        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.requestedPage.posts[j].content + '</a>' + ' -' + data.requestedPage.posts[j].poster);
         }
       },
       error: function(data) {
@@ -129,8 +129,8 @@ $(document).ready(function() {
         console.log(data);
         $('h5').hide();
         var pc = data.postCount;
-        for (var p = 0;p<data.posts.length;p++){
-        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.posts[p].content + '</a>' + ' -' + data.posts[p].poster);
+        for (var p = 0;p<data.requestedPage.posts.length;p++){
+        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.requestedPage.posts[p].content + '</a>' + ' -' + data.requestedPage.posts[p].poster);
         }
       },
       error: function(data) {

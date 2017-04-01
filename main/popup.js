@@ -62,7 +62,7 @@ $(document).ready(function() {
   });
  //------------------------------------------------------
  //var defId = 753252;
-  var id;
+  var id = 753252; /* temporary fix*/
   
   function fallback(){ id = localStorage.id;
     if (id == undefined || id === ''){

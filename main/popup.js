@@ -82,7 +82,7 @@ $(document).ready(function() {
       success: function(data) {
         var pc = data.postCount;
         for (var q = 0;q<data.requestedPage.posts.length;q++){
-        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.requestedPage.posts[q].content + '</a>' + ' -' + data.requestedPage.posts[q].poster);
+        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '" target="_blank">' + 'btctalk:' + '</a> &nbsp;' + '<p>' + data.requestedPage.posts[q].content + ' -' + data.requestedPage.posts[q].poster + '</p> <br>');
         }
       },
       error: function(data) {
@@ -93,8 +93,8 @@ $(document).ready(function() {
       success: function(data) {
         var pc = data.postCount;
         for (var j = 0;j<data.requestedPage.posts.length;j++){
-        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.requestedPage.posts[j].content + '</a>' + ' -' + data.requestedPage.posts[j].poster);
-        }
+        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '" target="_blank">' + 'btctalk:' + '</a> &nbsp;' + '<p>' + data.requestedPage.posts[j].content + ' -' + data.requestedPage.posts[j].poster + '</p> <br>');
+        } /* new changes to html display . untested*/
       },
       error: function(data) {
         console.log('error');
@@ -130,7 +130,7 @@ $(document).ready(function() {
         $('h5').hide();
         var pc = data.postCount;
         for (var p = 0;p<data.requestedPage.posts.length;p++){
-        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '">' + data.requestedPage.posts[p].content + '</a>' + ' -' + data.requestedPage.posts[p].poster);
+        $('section').append('<a href="' + 'https://bitcointalk.org/index.php?topic=' + id + '.' + pc + '" target="_blank">' + 'btctalk:' + '</a> &nbsp;' + '<p>' + data.requestedPage.posts[p].content + ' -' + data.requestedPage.posts[p].poster + '</p> <br>');
         }
       },
       error: function(data) {

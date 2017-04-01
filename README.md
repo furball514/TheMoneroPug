@@ -31,6 +31,8 @@ This extension can be found [here](https://monerocoin.github.io).
 * Optimized script loading
 * Colour coded
 
+[//]: # (fallback individual page listing btctalk add and check numberpages / pagenumbers etc.)
+
 [![1.png](https://s15.postimg.org/mnchsaa3f/image.png)](https://postimg.org/image/ycghg911z/)
 
 [![2.png](https://s17.postimg.org/aqdilq1zz/image.png)](https://postimg.org/image/5277utxnf/)

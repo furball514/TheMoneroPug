@@ -68,13 +68,13 @@ $(document).ready(function() {
     if (id == undefined || id === ''){
     id = 753252;
     console.log(id);}    /* fallback may fail. yet to test.*/
-     var random = Math.floor(Math.random() * 1400 + 1); 
+     var random = Math.floor(Math.random() * 1400 + 1); /* should change ?*/ /* temporary */
      //only for xmr spec
      $.ajax({
       url: 'http://bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=' + random ,
       dataType: 'json',
       success: function(data) {
-        var pageN = data.pageNumbers; /* numberPages ?*/
+        var pageN = data.numberPages; /* pageNumbers ?*/
         var pageNtoo = data.pages.length + 1;
         $.ajax({
       url: 'http://bitcointalkapi.appspot.com/v1/topics/' + id + '?pageId=' + pageN ,
@@ -115,7 +115,7 @@ $(document).ready(function() {
         setTimeout(rxmrtrader, 1000);
       }
     });     }
-  
+  /* set new fallback http://bitcointalkapi.appspot.com/v1/topics/753252/pages/1422 (data.posts)(no requestedPage) */
   function btcTalk() {
     id = localStorage.id;
     if (id == undefined || id === ''){

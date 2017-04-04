@@ -22,7 +22,6 @@ This extension can be found [here](https://monerocoin.github.io).
 * Stability
 * Option to see Poloniex Trollbox posts
 * Option to see Poloniex Charts
-* Option to see Last-Updated Timestamps
 * Choose between types of Reddit feed (eg. Hot,New,etc.)
 * Show converted markdown (Reddit posts)
 * Option to see rounded-off price changes

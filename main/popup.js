@@ -32,7 +32,7 @@ $(document).ready(function() {
       $('p, #change').removeClass('success')
       $('p, #change').removeClass('danger');   
     }
-    $('h6').text(data.timestamp);
+    $('h6').text('last updated: ' + new Date(data.timestamp * 1000).toString());
     //console.log(data.timestamp);
     /*$.getJSON('http://www.convert-unix-time.com/api?timestamp='+ data.timestamp,function(time){
       //console.log(time);

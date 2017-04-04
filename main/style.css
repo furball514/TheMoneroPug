@@ -15,8 +15,10 @@ a {
 }
 
 h6{
-  float: right;
-  display: none;
+  font-size: 9px;
+  margin: auto;
+  top: 0;
+  color: black;  
 }
 
 section{

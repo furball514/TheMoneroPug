@@ -24,7 +24,10 @@
       "main/jquery-3.2.0.min.js",
       "main/popup.js",
       "more/more.js",
-      "setting/options.js"
+      "setting/options.js",
+      "charts/charts.js",
+      "charts/amcharts.js",
+      "charts/serial.js"
     ]
   },
   "permissions": [

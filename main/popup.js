@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+var a = 0;
+var b = 1;
+var c = 0;
+  
   var currency = 'usd';
   $('h5').hide();
   $('.round').click(function() {
@@ -101,7 +105,10 @@ $(document).ready(function() {
         $('h5').show();
         setTimeout(function(){$('h5').hide();},2000);
         //alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
-        setTimeout(rxmrtrader, 1000)      
+        setTimeout(rxmrtrader, 1000);
+        $('b').show();   
+        $('b').click(function(){
+          b++; rxmrtrader();
       }
     });        
       }
@@ -113,6 +120,9 @@ $(document).ready(function() {
         setTimeout(function(){$('h5').hide();},2000);
         //alert('BitcoinTalk API failed,showing r/xmrtrader instead.');
         setTimeout(rxmrtrader, 1000);
+        $('b').show();   
+        $('b').click(function(){
+          b++; rxmrtrader();
       }
     });     }
   /* set new fallback http://bitcointalkapi.appspot.com/v1/topics/753252/pages/1422 (data.posts)(no requestedPage) */
@@ -142,7 +152,7 @@ $(document).ready(function() {
 
   function rxmr() {
     $.getJSON('http://www.reddit.com/r/monero/new.json?sort=new', function(data) {
-      $('section').append('r/Monero:&nbsp;' + '<a href="' + data.data.children[0].data.url + '" target="_blank">' + data.data.children[0].data.title + '</a>' + '<br>' + data.data.children[0].data.selftext);
+      $('section').html('r/Monero:&nbsp;' + '<a href="' + data.data.children[a].data.url + '" target="_blank">' + data.data.children[a].data.title + '</a>' + '<br>' + data.data.children[a].data.selftext);
       //console.log(data);
     });
   }
@@ -150,13 +160,13 @@ $(document).ready(function() {
   function rxmrtrader() {
     $.getJSON('http://www.reddit.com/r/xmrtrader/new.json?sort=new', function(data) {
       //console.log(data);
-      $('section').append('r/xmrtrader:&nbsp;' + '<a href="' + data.data.children[1].data.url + '" target="_blank">' + data.data.children[1].data.title + '</a>' + '<br>' + data.data.children[1].data.selftext);
+      $('section').html('r/xmrtrader:&nbsp;' + '<a href="' + data.data.children[b].data.url + '" target="_blank">' + data.data.children[b].data.title + '</a>' + '<br>' + data.data.children[b].data.selftext);
     });
   }
 
   function stacknews() {
     $.getJSON('https://api.stackexchange.com/2.2/questions?site=monero.stackexchange&key=pBB66N00y6UB2taxSwd0mg((', function(data) {
-      $('section').append('monero.stackexchange:&nbsp;' + '<a href="' + data.items[0].link + '" target="_blank">' + data.items[0].title + '</a>' + '<br>');
+      $('section').html('monero.stackexchange:&nbsp;' + '<a href="' + data.items[c].link + '" target="_blank">' + data.items[c].title + '</a>' + '<br>');
       //console.log(data);
     });
   }
@@ -170,6 +180,15 @@ $(document).ready(function() {
   }
 }
   check();
+                      
+   if(setting === 'btc'){
+    $('b').hide();
+  }
+  else {
+    $('b').show();
+  }
+
+function rerender(){
   switch (setting) {
     case 'btc':
       btcTalk();
@@ -184,6 +203,26 @@ $(document).ready(function() {
       stacknews();
       break;
   }
+  console.log('rerendered');
+}
+  rerender();
+                      
+      
+$('b').click(function(){
+  check();
+  switch(setting){
+    case 'rxmr':
+      a++; rerender();
+      break;
+    case 'rxmrtrader':
+      b++; rerender();
+      break;
+    case 'stack':
+      c++; rerender();
+      break;
+  }
+});    
+                      
   $('#settings').click(function() {
   if (chrome.runtime.openOptionsPage) {
     // New way to open options pages, if supported (Chrome 42+).

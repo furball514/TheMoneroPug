@@ -21,7 +21,8 @@ This extension can be found [here](https://monerocoin.github.io).
 * Better,compact layout
 * Stability
 * Option to see Poloniex Trollbox posts
-* Option to see Poloniex Charts
+* See Candlesticks for different time periods
+* See stacked bar chart comprising of Volume, High and Low
 * Choose between types of Reddit feed (eg. Hot,New,etc.)
 * Show converted markdown (Reddit posts)
 * Option to see rounded-off price changes

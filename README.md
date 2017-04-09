@@ -37,6 +37,8 @@ This extension can be found [here](https://monerocoin.github.io).
 
 [![8.png](https://s17.postimg.org/pkfp450in/image.png)](https://postimg.org/image/pkfp450ij/)
 
+[![9.png](https://s22.postimg.org/dh75imshd/image.png)](https://postimg.org/image/9kttmn7hp/)
+
 [![6.png](https://s3.postimg.org/767xqbfc3/image.png)](https://postimg.org/image/x1ro9ih5r/)
 
 [![1.png](https://s15.postimg.org/mnchsaa3f/image.png)](https://postimg.org/image/ycghg911z/)

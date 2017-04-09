@@ -33,6 +33,8 @@ This extension can be found [here](https://monerocoin.github.io).
 
 [//]: # (fallback individual page listing btctalk add and check numberpages / pagenumbers etc.)
 
+[![7.png](https://s12.postimg.org/sezr3l5b1/image.png)](https://postimg.org/image/elbeejcpl/)
+
 [![6.png](https://s3.postimg.org/767xqbfc3/image.png)](https://postimg.org/image/x1ro9ih5r/)
 
 [![1.png](https://s15.postimg.org/mnchsaa3f/image.png)](https://postimg.org/image/ycghg911z/)

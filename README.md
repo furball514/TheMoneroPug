@@ -30,6 +30,7 @@ This extension can be found [here](https://monerocoin.github.io).
 * Fixed issues with Bitcointalk API
 * Optimized script loading
 * Colour coded
+* Proposed- to see charts as background theme for newtabs
 
 [//]: # (fallback individual page listing btctalk add and check numberpages / pagenumbers etc.)
 

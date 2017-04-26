@@ -13,7 +13,7 @@ This extension can be found [here](https://monerocoin.github.io).
 * Small download
 * See price/volume in both BTC and USD
 * See price/volume from different exchanges
-* See the latest Bitcointalk.org, r/monero, r/xmrtrader, monero.stackexchange post.
+* See the latest Bitcointalk.org, r/monero, r/xmrtrader, monero.stackexchange, Poloniex trollbox post.
 
 **Coming up in versions 1.1.0 and higher.**
 

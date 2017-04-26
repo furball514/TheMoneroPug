@@ -195,7 +195,7 @@ var c = 0;
   var setting;
   function check(){
   setting = localStorage.mySetting;
-  if (setting == undefined || (setting != 'btc' && setting != 'rxmr' && setting != 'rxmrtrader' && setting != 'stack')){
+  if (setting == undefined || (setting != 'btc' && setting != 'rxmr' && setting != 'rxmrtrader' && setting != 'stack' && setting != 'troll')){
   	setting = 'btc';
   }
 }

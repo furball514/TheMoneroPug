@@ -17,7 +17,9 @@ $(document).ready(function(){
   $('#stack').click(function(){
    setting = 'stack';
   });
-
+  $('#troll').click(function(){
+    setting = 'troll';
+  });
 
   $('button').click(function(){
     console.log(setting);

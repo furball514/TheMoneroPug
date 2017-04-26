@@ -172,12 +172,30 @@ var c = 0;
       //console.log(data);
     });
   }
-
+  
+   function troll() {
+    $.ajax({
+      url: 'https://cactus-library.glitch.me',
+      dataType: 'json',
+      success: function (data){
+          $('section').html('<p>tb:</p>&nbsp; <a href="https://www.poloniex.com/trollbox" target="_blank">' + data[data.length - 1] + '</a>');
+      },
+      error: function () {
+         console.log('error');
+        setTimeout(rxmrtrader, 1000);
+        $('b').show();
+        $('b').click(function(){
+          b++; rxmrtrader();
+        });  
+      }
+    });
+  }
+  
   //var defSetting = 'btc';
   var setting;
   function check(){
   setting = localStorage.mySetting;
-  if (setting == undefined || (setting != 'btc' && setting != 'rxmr' && setting != 'rxmrtrader' && setting != 'stack')){
+  if (setting == undefined || (setting != 'btc' && setting != 'rxmr' && setting != 'rxmrtrader' && setting != 'stack' && setting != 'troll')){
   	setting = 'btc';
   }
 }
@@ -204,6 +222,9 @@ var c = 0;
     case 'stack':
       stacknews();
       break;
+    case 'troll':
+      troll();
+      break;
   }
   console.log('rendered')
 }
@@ -220,6 +241,9 @@ $('b').click(function(){
       break;
     case 'stack':
       c++; rerender();
+      break;
+    case 'troll':
+      rerender();
       break;
   }
 });

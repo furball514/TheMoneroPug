@@ -222,6 +222,9 @@ var c = 0;
     case 'stack':
       stacknews();
       break;
+    case 'troll':
+      troll();
+      break;
   }
   console.log('rendered')
 }
@@ -238,6 +241,9 @@ $('b').click(function(){
       break;
     case 'stack':
       c++; rerender();
+      break;
+    case 'troll':
+      rerender();
       break;
   }
 });

@@ -178,7 +178,7 @@ var c = 0;
       url: 'https://cactus-library.glitch.me',
       dataType: 'json',
       success: function (data){
-          $('section').html('tb: ' + data[data.length - 1]);
+          $('section').html('<p>tb:</p>&nbsp; <a href="https://www.poloniex.com/trollbox" target="_blank">' + data[data.length - 1] + '</a>');
       },
       error: function () {
          console.log('error');

@@ -172,7 +172,25 @@ var c = 0;
       //console.log(data);
     });
   }
-
+  
+   function troll() {
+    $.ajax({
+      url: 'https://cactus-library.glitch.me',
+      dataType: 'json',
+      success: function (data){
+          $('section').html('tb: ' + data[data.length - 1]);
+      },
+      error: function () {
+         console.log('error');
+        setTimeout(rxmrtrader, 1000);
+        $('b').show();
+        $('b').click(function(){
+          b++; rxmrtrader();
+        });  
+      }
+    });
+  }
+  
   //var defSetting = 'btc';
   var setting;
   function check(){

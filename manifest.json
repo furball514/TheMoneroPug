@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "TheMoneroPugTheme",
+  "short_name":"MoneroPugth",
+  "author": "Karthik",
+  "version": "1.0.0",
+  "version_name": "1.0.0",
+  "description": "A Chrome Monero charts theme.",
+  "icons": {
+    "16": "main/16.png",
+      "48": "main/48.png",
+      "128": "main/128.png"
+  },
+  "background": {
+    "scripts": [
+      "main/jquery-3.2.0.min.js",
+      "charts/charts.js",
+      "charts/amcharts.js",
+      "charts/serial.js"
+  ]
+    },
+
+  "chrome_url_overrides" : {
+    "newtab": "/charts/charts.html"
+  }
+}

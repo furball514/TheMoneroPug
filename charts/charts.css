@@ -1,0 +1,92 @@
+#chartcontainer {
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+
+#chartdiv, #curtain {
+    width: 800px;
+    height: 800px;
+  position: absolute;
+}
+
+#curtain {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 25px;
+}
+
+#curtain span {
+  display: block;
+  position: absolute;
+  top: 49%;
+  width: 100%;
+  text-align: center;
+}
+
+#details{
+ border: 2px dotted black;
+ margin-left: 30px;
+}
+
+#quit{
+  margin-left: 10px;
+}
+
+form{
+ font-family: sans-serif;
+ margin-bottom: 30px;
+ margin-top: 10px;
+}
+
+/*
+a{
+  text-decoration: none;
+  color: #3a4449;
+}*/
+
+ul {
+  display: none;
+}
+/*
+.content{
+  display: none;
+}
+
+li {
+  display: inline;
+  font-size: 11px;
+  border: 1px solid #91abac;
+  background-color: #ffffff;
+  background-image: -webkit-linear-gradient(#ffffff, #c4d5db);
+  background-image: linear-gradient(#ffffff, #c4d5db);
+  padding: 2px;
+  padding-right: 0.6px;
+  text-align: center;
+  font-family: Sans-Serif;
+}
+
+ul li:focus,
+ul li:hover {
+  background-color: #e3e8e9;
+  background-image: -webkit-linear-gradient(#e3e8e9, #c4d5db);
+  background-image: linear-gradient(#e3e8e9, #c4d5db);
+}
+
+ul li.clicked {
+  background-color: #e9ad3c;
+  background-image: -webkit-linear-gradient(#e9ad3c, #fbeed6);
+  background-image: linear-gradient(#e9ad3c, #fbeed6);
+  color: #342201;
+}
+
+ul li:first-child {
+  border-radius: 5px 0 0 5px;
+  border-left-width: 1px;
+}
+
+ul li:last-child {
+  border-radius: 0 5px 5px 0;
+  padding-right: 1.5px;
+}
+*/

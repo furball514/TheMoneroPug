@@ -32,5 +32,8 @@
   },
   "permissions": [
     "storage"
-  ]
+  ],
+  "chrome_url_overrides" : {
+    "newtab": "/charts/charts.html"
+  }
 }

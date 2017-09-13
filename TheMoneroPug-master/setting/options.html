@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Options</title>
+  <link rel="stylesheet" href="options.css" type="text/css">
+  </head>
+  <body>
+   <h6>Saved</h6>
+  <a href="/main/popup.html">X</a>
+  <h4>Subscribe to:</h4>
+<form>
+  <input id="btc" type="radio" name="feed" value="btc" checked> bitcointalk.org 
+  <br>
+  <input id="rxmr" type="radio" name="feed" value="rxmr">&nbsp;r/Monero<br>
+  <input id="rxmrtrader" type="radio" name="feed" value="rxmrtrader"> r/xmrtrader<br>
+  <input id="stack" type="radio" name="feed" value="stack"> stackexchange<br>
+  <input id="troll" type="radio" name="feed" value="troll">&nbsp;trollbox
+</form>
+
+<form>
+  Enter (btctalk)Topic id:
+     <input id="topic" type="number" name="topic" placeholder="753252" value=""> (Note: Default is Monero Speculation.[753252]) 
+</form><br> 
+<br>
+<br>
+  <div id="sub"><button>Submit</button></div>
+ <script src="/main/jquery-3.2.0.min.js"></script>
+    <script src="options.js"></script>  
+  </body>
+</html>

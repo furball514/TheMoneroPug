@@ -8,3 +8,4 @@ Chrome extension for viewing Monero market details. Made for traders.
 * See price/volume in both BTC and USD
 * See price/volume from different exchanges
 * See the latest Bitcointalk.org, r/monero, r/xmrtrader, monero.stackexchange, Poloniex trollbox post.
+* _APIs used have been deprecated_

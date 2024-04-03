@@ -4,9 +4,6 @@ Chrome extension for viewing Monero market details. Made for traders.
 This extension can be found [here](https://monerocoin.github.io). 
 ---------
 
-[Developer website](https://karthiknallasivan.github.io).Mail [me](http://scr.im/3nji).
----------
-
 **Features**
 
 * Simple layout
@@ -14,24 +11,6 @@ This extension can be found [here](https://monerocoin.github.io).
 * See price/volume in both BTC and USD
 * See price/volume from different exchanges
 * See the latest Bitcointalk.org, r/monero, r/xmrtrader, monero.stackexchange, Poloniex trollbox post.
-
-**Coming up in versions 1.1.0 and higher.**
-
-* Option to see more posts
-* Better,compact layout
-* Stability
-* See Candlesticks for different time periods
-* See stacked bar chart comprising of Volume, High and Low
-* Choose between types of Reddit feed (eg. Hot,New,etc.)
-* Show converted markdown (Reddit posts)
-* Option to see rounded-off price changes
-* Cryptocompare API
-* Fixed issues with Bitcointalk API
-* Optimized script loading
-* Colour coded
-* Proposed- to see charts as background theme for newtabs , minified files ,npm
-
-[//]: # (fallback individual page listing btctalk add and check numberpages / pagenumbers etc.)
 
 [![7.png](https://s12.postimg.org/sezr3l5b1/image.png)](https://postimg.org/image/elbeejcpl/)
 
